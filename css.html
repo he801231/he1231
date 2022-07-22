@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta>
+    <meta>
+    <title> CSS.HTML </title>
+    <style>
+        /*css註解*/
+        .emText {color : black}     /*class 為 .xxxx*/
+        .sam { color : red }
+        .sumi{ color : purple }
+        .Lee { color : pink }
+        #laset { color : cyan}     /*id 不可取代有唯一性 為 #xxxx*/
+
+        *{color : blue}             /*星號是個通用選擇器*/
+        h1{color : brown}           /*有被標記到的才會套用*/
+
+        div {color :darkgreen;}
+        div [title] {color :red;}
+        div [title = 'fishcat'] {color :yellow;}
+        div [title ~= 'fishbecat'] {color : rgb(135, 222, 208);}
+
+        a {color :blueviolet}
+        h1 a {color:beige}
+        #wrapper a {color:aqua}
+
+        #wrapper1 > p {color:darkgoldenrod} 
+        #wrapper1 p {color :aquamarine}
+
+        h2 {color:fuchsia}
+        h2 + p {color:lightsalmon}
+
+        /*h3,h4 {color:beige}*/  /*群組 直接全部套用指定的*/
+    </style>
+</head>
+<body>
+    <p class = 'emText'> 測試用段落 </p>
+    <!----HTML註解---->
+    <p class ='sam'> SAM</p>
+    <p class = 'sumi'> SUMI</p>
+    <p class = 'Lee'>Lee</p>
+    <p id ='laset'>這邊為ID的演繹</p>
+
+    <h1>測試用</h1>
+    <h2>通用選擇器</h2>
+
+    <div>DIV1</div>
+    <div title = 'blog'>DIV2</div>
+    <div title = 'ishcat'>DIV3</div>
+    <div title = 'fishbecat'>DIV4</div>
+
+    <a>測試用a</a>
+    <h1><a> 測試用 h1 a</a></h1>
+    <div id = 'wrapper'><a>測試用 wrapper</a></div>
+
+    <div id='wrapper1'><p>TEST1</p></div>
+    <div id='wrapper1'><span><p>TEST2</p></span></div>
+
+    <h2>H2用</h2>
+    <p>H2用P</p>
+    <p>H2用P沒有相鄰的就會回復預設值</p> <!---相鄰的只有影響到相近的地方 以外的就會回到預設--->>
+
+</body>
+</html>
