@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<!--<script>
+    //alert("您好!");  //彈出視窗
+    //註解
+    /*也是註解*/
+
+    var x = 1; //var是變數的宣告
+    var y = X + 2;
+    var z = "I'm Jack"
+    var temp = ("Hello" + z);
+    alert(temp);
+    alert(temp + "how are you?");
+    
+</script>-->
+
+<script>
+    var x=5, y=3 , z=1 , w= Null
+    a = x+y+z
+    b = x-y-z
+    c = w*55
+
+    alert("x+y+z=",a);
+    //console.log("x+y+z=",a);
+    //console.log("x-y-z=",b);
+    //console.log("w*55=",c)
+
+</script>
+
+<script>
+//關係運算子
+//邏輯運算子
+//指定運算子
+//if ...else 語法結構 if() {};
+
+    var n = Math.floor(Math.random()*100);
+
+    if( n >= 50){
+        console.log(n,"大於等於50。");
+    }
+    else{
+        console.log(n,"小於50。");
+    }
+
+</script>
+
+<script>
+//三元運算子 判斷式 ? (True) : (False)
+    n >= 50 ?(
+        console.log(n,"大於等於50。")
+     ) : (
+        console.log(n,"小於50。")
+     );
+</script>
+
+
+<script>
+    var a =5;
+    var y =0;
+
+    if(x ==1 && y==0){
+        alert("condition1")
+    }
+    else{
+        alert("elsecondition")
+    }
+</script>
+
+<script>
+//for(設定初執 ; 判斷條件 ; 設定增減量 ;)
+//變數宣告 var 變數名稱 = 指定的值;
+//遞增遞減運算子
+    for (i=1; i<=10; i++){
+        console.log(i + "平方 = " + (i+i));
+    }
+        comsole.log("現在的值 = ", +i);
+
+// ++ 在前在後結果不同  //++在前先做完   ++在後就是後做
+// a = 3;  b = 3; 
+// a += b ++            // (a+a)  (b+1) 
+// a = 6; b = 4;
+// a += ++ b            //(a+a+1) (b)
+// a = 7; b = 3;
+</script>
+
+<script>
+//多重選擇 switch...case
+var day;
+var a = Date().getDay()
+switch (new Date().getDay()){
+    case 0:             //比對子不可以重複
+        day = "星期日";
+        break;
+    case 1:
+        day = "星期一";
+        break;
+    case 2:
+        day = "星期二";
+        break;
+    case 3:
+        day = "星期三";
+        break;
+    case 4:
+        day = "星期四";
+        break;
+    case 5:
+        day = "星期五";
+        break;
+    case 6:
+        day = "星期六";
+        break;
+}
+
+    console.log("今天是" + day);
+    console.log("a:" + a);
+</script>
+
+<script>
+//continue and break 敘述
+for(a=1; a<=10 ; a++){
+    if(a==3){
+        console.log(a);
+        continue;
+    }
+    if(a==8){
+        console.log(a);
+        break;
+    }
+    console.log("for loop a=" + a)
+}
+</script>
+</html>
