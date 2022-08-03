@@ -5,7 +5,7 @@
     <meta>
     <title> CSS1.HTML </title>
     <style>
-        p{color:rgba(252,186,3,0.8);
+        p { color:rgba(252,186,3,0.8);
             font-size:40px;
             letter-spacing: 10px;
             line-height: 1.5;
@@ -13,12 +13,26 @@
             text-align:right;/*left ,center*/
             font-family: '標楷體', sans-serif;
         }
-        div {
+        /*div {
             font-family:Arial,'Times New Roman','Microsoft YaHei'; font:bold 12px/0.75em Arial,'Times New Roman','Microsoft YaHei';
             font-size:40px;
             line-height: 1.5;
+        }*/
+        
+        div{
+            background : red;
+            width : 200px;
+            height : 200px;
+            overflow : hidden;
+            border : 5px solid black;
+            padding : 50px 10px 20px 40px;
+            margin : 50px; 
+            /*display : inline*/   /*可以調整不同顯示操作*/
         }
-          
+
+        a {
+            dispaly : inline
+        }
           /*全部設定字體*/
         body { font-family: verdana, Times New Roman, 新細明體, 微軟正黑體; }
 
@@ -26,9 +40,12 @@
     </style>
 </head>
 <body>
+    <div>AAAAAAAAAAAAAAA</div>
+    <div>BBBBBBBBBBBBBBB</div>
 
-    <div>測試一號</div>
-    <p>測試二號</p>
+
+    <a>1111111</a>
+    <a>2222222</a>
     <!---此為個別設定字體--->
     <div><span style = "font-family: verdana, Times New Roman, 新細明體, 微軟正黑體;">測試三號</span></div>
 
