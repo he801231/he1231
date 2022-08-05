@@ -78,4 +78,39 @@ console.log(arr);
 let mapArr1 = arr.map(x => x*2);
 console.log(mapArr1)
 
+//正則表達式
+var reg = /you/; //比對位置
+var target = "just do you best you can!"
+console.log(target.search(reg));
+
+//正則表達式
+
+/*
+g: 全域比對 (Global match)
+i: 忽略大小寫 (Ignore case)
+gi: 全域比對並忽略大小寫 
+*/
+
+var target = "There's a hero.If you look inside your heart.You don't have to be afraid of what you are.There's an answer If you reach into your soul And the sorrow that you know will melt away."
+//you出現幾次
+console.group("查詢某字出現的次數")
+reg1 = /you\b/gi;
+var result=target.match(reg);
+console.log( result );
+console.log("you 出現", result.length , "次。")
+console.groupEnd("查詢某字出現的次數")
+
+
+var reg01 = /^18/gi;        //開頭符合18
+var reg02 = /day$/g;        //結尾符合day
+var reg03 = /Tuesday$/gi;   //比對符合3~4位數字
+var reg04 = /310$/;         //比對符合3~4位數字
+var reg05 = /310$/m;        //比對符合3~4位數字 m比對換行符號
+
+console.log(target.match(reg01));
+console.log(target.match(reg02));
+console.log(target.match(reg03));
+console.log(target.match(reg04));
+console.log(target.match(reg05));
+
 </script>
