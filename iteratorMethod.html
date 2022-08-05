@@ -1,0 +1,53 @@
+<meta charset="UTF-8">
+
+<script>
+//entries() 方法返回一個新的Array Iterator對象，該對象包含數組中每個索引的鍵/值時
+array1=[10,20,30,40,50];
+console.log("原始陣列",array1)
+
+//entries()
+var iterator1 = array1.entries();
+console.log( interator1.next().value ); //Array[0,10]
+
+//values()
+var iterator1 = array1.values();
+console.log( iterator1.next().value ); //10
+
+//filter()
+var filtered = array1.filter(valu => value >25);
+console.log( filtered ); //[30, 40, 50] 
+
+
+//funtion 方法
+
+function greeting(){
+    console.log("Hello1");
+}
+
+greeting();
+
+//改成箭頭的寫法
+var greeting = () => {
+    console.log("Hello2")
+}
+
+greeting();
+
+//也等於這種寫法
+var greeting = () =>"Welcome"
+console.log(greeting());
+
+//也等於這種寫法
+
+var greeting = function(){
+    return "Welcome"
+}
+
+greeting();
+
+
+
+
+
+
+</script>
