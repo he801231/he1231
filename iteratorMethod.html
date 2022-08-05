@@ -5,7 +5,7 @@
 array1=[10,20,30,40,50];
 console.log("原始陣列",array1)
 
-//entries()
+//entries() 
 var iterator1 = array1.entries();
 console.log( interator1.next().value ); //Array[0,10]
 
@@ -13,7 +13,7 @@ console.log( interator1.next().value ); //Array[0,10]
 var iterator1 = array1.values();
 console.log( iterator1.next().value ); //10
 
-//filter()
+//filter()  過濾條件
 var filtered = array1.filter(valu => value >25);
 console.log( filtered ); //[30, 40, 50] 
 
@@ -45,9 +45,37 @@ var greeting = function(){
 
 greeting();
 
+var arr = ["a","b","c"];
+var iter = arr.enteries();
+var a = [];
+
+// for(var i=0; i< arr.length; i++)  //實際使用是這個
+for(var i=0; i< arr.length+1; i++){  // len +1 比組數長度大
+    var tem = iter.next();           //每次替代時更新next
+    console.log(tem.done);          
+    if(tem.done !== true){
+        console.log(tem.value);
+        a[i]=tem.value;
+    }
+}
 
 
+// map() 為原屬性去新增一個新的陣列，
+let mapArr = arr.map(x => x*2);
+console.log(mapArr);
 
+let A = [9000, 8500, 5500, 6500];
+let B = A.map(function (valie, index, array) {  //數值, 編號, 屬性, 
+    return value*2;
+})
 
+console.log(A);
+console.log(B);
+
+let arr = [1,10,25];
+console.log(arr);
+
+let mapArr1 = arr.map(x => x*2);
+console.log(mapArr1)
 
 </script>
